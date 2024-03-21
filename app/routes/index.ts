@@ -1,10 +1,10 @@
 import express from "express";
 
-import defaultController from "@app/controllers/_defaultController";
-import headerValidator from "@app/middlewares/headersValidate";
+import main from "@app/controllers/main";
+import middleware from "@app/middlewares/middleware";
 
 const router = express.Router();
 
-router.use("/main", [headerValidator, defaultController]);
+router.use("/", [middleware, main]);
 
 export default router;

@@ -5,7 +5,7 @@ export default async function _defaultController(
   response: Response
 ) {
   try {
-    console.log();
+    console.log("route main");
   } catch (e) {
     response.status(502).end(JSON.stringify({ message: (e as Error).message }));
   }
