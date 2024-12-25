@@ -1,5 +1,7 @@
 import { Request, Response } from "express";
 
+// ----------------------------------------------------------------------
+
 export default async function _defaultController(
   request: Request,
   response: Response

@@ -1,12 +1,12 @@
 import "module-alias/register";
 import express, { Express } from "express";
-import dotenv from "dotenv";
+import "dotenv/config";
 import cors from "cors";
 
 import router from "@app/routes";
 import bodyParser from "body-parser";
 
-dotenv.config();
+// ----------------------------------------------------------------------
 
 const app: Express = express();
 const port = process.env.PORT;
